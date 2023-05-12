@@ -21,6 +21,7 @@ function App() {
     // }
 
     useEffect(() => {
+        window.location.reload();
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
 
