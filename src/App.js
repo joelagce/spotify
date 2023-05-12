@@ -36,10 +36,9 @@ function App() {
         }
 
         setToken(token)
-        if (!window.performance.navigation.type === 1) {
+        if (token) {
             window.location.reload();
         }
-
     }, [])
 
     const logout = () => {
