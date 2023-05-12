@@ -7,8 +7,7 @@ function Playlist(props) {
   const [playlistTracks, setPlaylistTracks] = useState([]);
   
   useEffect(() => {
-    window.location.reload();
-
+   
     
     async function fetchPlaylist() {
         let token = window.localStorage.getItem("token")
