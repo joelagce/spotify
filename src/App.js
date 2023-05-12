@@ -34,10 +34,9 @@ function App() {
         setToken(token)
     
         // Reload the page only once when the token is set
-        const hasReloaded = window.localStorage.getItem("hasReloaded")
-        if (token && !hasReloaded) {
-            window.localStorage.setItem("hasReloaded", true)
-            window.location.reload()
+        const slug = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+        if (slug.includes('#')) {
+          window.location.reload();
         }
     
     }, [])
