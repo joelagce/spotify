@@ -21,7 +21,7 @@ function App() {
     // }
 
     useEffect(() => {
-        window.location.reload();
+  
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
 
@@ -36,6 +36,9 @@ function App() {
         }
 
         setToken(token)
+        if (!window.performance.navigation.type === 1) {
+            window.location.reload();
+        }
 
     }, [])
 
