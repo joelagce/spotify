@@ -5,8 +5,10 @@ import verifidated from "../verified.png"
 
 function Playlist(props) {
   const [playlistTracks, setPlaylistTracks] = useState([]);
+  window.location.reload();
 
   useEffect(() => {
+    
     async function fetchPlaylist() {
         let token = window.localStorage.getItem("token")
 
