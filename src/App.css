@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.pages{
+  display: flex;
+  justify-content: space-between;
+}
+.resultados{
+  width: 30%;
+  border-left: 2px solid rgb(244, 244, 244);
+  padding: 10px;
+ 
+ 
+}
+
+
+
+.resultados div img{
+  width: 40px;
+  border-radius: 5px;
+}
+
+.resultados {
+  
+ 
+  font-family: 'Inter', sans-serif;
+ 
+  height: 100vh;
+}
+
+
+
+.resultados form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultados input[type="text"] {
+  padding: 15px 50px;
+  margin-right: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.resultados button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ed0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.resultados button[type="submit"]:hover {
+  background-color: #d61c1c;
+}
+
+.resultados h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #444;
+  margin-top: 2rem;
+}
+
+.resultados h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.resultados ul {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.resultados li {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.resultados img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.resultados p {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.artist{
+  margin:40px 10px 10px 10px;
+  
+}
+.resultados .artistacard{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resultados .artistacard .title{
+  display: block;
+  margin: 10px;
+  text-align: left;
+}
+
+
+.resultados .artistacard div:nth-child(1){
+  
+   font-weight: 600;
+}
+.resultados .artistacard .title div:nth-child(2){
+  
+  font-weight: 300;
+  color: #949494;
+
+}
+
+.emptys{
+
+  text-align: center;
+}
+
+.emptys h1{
+  font-size: 20px;
+  font-weight: 1000;
+  color: #ed0000;
+}
+.emptys p{
+  color: #acacac;
+}
+
+.logout{
+  background-color: #444;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #f1f1f1;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.modal{
+  
+  text-align: center;
+}
+.modal a{
+  background-color: #d61c1c;
+  padding: 10px 40px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
