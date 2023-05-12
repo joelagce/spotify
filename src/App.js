@@ -21,25 +21,27 @@ function App() {
     // }
 
     useEffect(() => {
-  
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
-
-        // getToken()
-
-
+    
         if (!token && hash) {
             token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
-
+    
             window.location.hash = ""
             window.localStorage.setItem("token", token)
         }
-
+    
         setToken(token)
-        if (token) {
-            window.location.reload();
+    
+        // Reload the page only once when the token is set
+        const hasReloaded = window.localStorage.getItem("hasReloaded")
+        if (token && !hasReloaded) {
+            window.localStorage.setItem("hasReloaded", true)
+            window.location.reload()
         }
+    
     }, [])
+    
 
     const logout = () => {
         setToken("")
