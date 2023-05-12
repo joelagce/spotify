@@ -8,7 +8,7 @@ import Modal from "./components/Modal/Modal";
 
 function App() {
     const CLIENT_ID = "429a10046e63457c9200ea1c778d3abf"
-    const REDIRECT_URI = "http://localhost:3001"
+    const REDIRECT_URI = "https://spotify-seven-sooty.vercel.app"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const [token, setToken] = useState("")
