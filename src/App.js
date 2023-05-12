@@ -35,9 +35,9 @@ function App() {
     
         // Reload the page only once when the token is set
         const slug = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-    if (slug.includes('#')) {
-      window.history.pushState({}, null, '/');
-    }
+        if (slug.includes('#')) {
+          window.location.replace('/');
+        }
     
     }, [])
     
